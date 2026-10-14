@@ -115,7 +115,7 @@ Either package installs it as **Study Companion** in your app launcher, so you c
 In Settings:
 1. Toggle **Obsidian logging** on.
 2. Browse to (or paste) your vault's folder path.
-3. Set the log file name (defaults to `Study Log.md` — it's created automatically if it doesn't exist, in the vault root).
+3. Set the log file name (defaults to `Study Log.md` it's created automatically if it doesn't exist, in the vault root).
 4. Hit **Test connection** — you should see a "Connection test" entry appear in that file inside Obsidian.
 From then on, checking off a task or finishing a pomodoro focus session appends a line like:
  
@@ -186,9 +186,9 @@ study-companion/
 - **Export/import use the same format on purpose** — round-tripping a plan (export, hand-edit, re-import) is simpler to support than a full in-app editor, and preserves progress correctly since checkbox state travels with the markdown.
 ## Next steps you might want
  
-- A tray icon (via `tauri-plugin-tray`) so closing the window doesn't fully quit the app.
+- A tray icon (via `tauri plugin tray`) so closing the window doesn't fully quit the app.
 - Multiple named checklists (e.g. swap between study plans) — the store already separates `plan` cleanly, so this is mostly a UI change plus keying `plan` by an id.
 - Weekly Obsidian summary (e.g. append a "Week X wrap-up" block every Sunday) — you already have `pomodoroLogs`/`completionLogs` with timestamps to build that from.
 ## Version history
  
-- **v1.0.0** — Initial release: checklist with markdown import/export, pomodoro timer with mood-changing avocado mascot, Obsidian vault logging, always-on-top + widget mode, Debian/RPM packages.
+- **v1.0.0** — Initial release: checklist with markdown import/export, pomodoro timer with mood-changing avocado, Obsidian vault logging, always on top + widget mode, Debian/RPM packages.
